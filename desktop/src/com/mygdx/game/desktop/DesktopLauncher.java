@@ -2,7 +2,7 @@ package com.mygdx.game.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.mygdx.game.MainClass;
+import com.mygdx.screens.ScreenManager;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
@@ -13,6 +13,6 @@ public class DesktopLauncher {
 		config.height = 1080;
 		config.fullscreen = true;
 		config.forceExit = true;
-		new LwjglApplication(new MainClass(), config);
+		new LwjglApplication(new ScreenManager(), config);
 	}
 }
